@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Add your code here
+        bandInfo = {
+            name: 'Souto',
+            nationality: 'Moz',
+            genre: 'rock',
+            menbers: 56,
+            formed: 1987,
+            split: false,
+            albums:{name:['joao','francisco'],
+                    released:['1989','1278']
+                }
+          /**  biografia : function(){
+                alert ('Oi eu sou o '+this.name+' sou de nacionalidade '+this.nationality+                
+                ' essa banda tem '+this.formed+' anos de actividade '+this.genre+' temos um estilo tipo '+
+                ' nosso primeiro album tinha o titulo '+this.albums['name'][0]+
+                'com data de lacamento '+this.albums['released'][0])
+            }
+
+           */
+              
+        };
+
+       bandInfo='Oi eu sou o'+ bandInfo.name+' sou de nacionalidade '+bandInfo.nationality+                
+                ' essa banda tem '+bandInfo.formed+' anos de actividade '+bandInfo.genre+' temos um estilo tipo '+
+                ' nosso primeiro album tinha o titulo '+bandInfo['albums']['name'][0]+' com data de lacamento '+bandInfo.albums['released'][0];
+
+
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;           
+               
+    section.appendChild(para1);
+  </script>
+
+</html>
